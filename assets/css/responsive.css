@@ -1,0 +1,787 @@
+@media only screen and (max-width: 1900px) and (min-width: 1670px) {
+    .leftSideImageArea .sideImage {
+        height: 600px;
+    }
+
+    .rightSideImageArea .sideImage {
+        height: 600px;
+    }
+
+    .leftSideImageArea {
+        position: absolute;
+        left: 0;
+        top: 15%;
+    }
+
+    .rightSideImageArea {
+        position: absolute;
+        right: 0;
+        top: 15%;
+    }
+}
+
+@media only screen and (max-width: 1900px) and (min-width: 1670px) {
+    .leftSideImageArea .sideImage {
+        height: 600px;
+    }
+
+    .rightSideImageArea .sideImage {
+        height: 600px;
+    }
+
+    .leftSideImageArea {
+        position: absolute;
+        left: 0;
+        top: 15%;
+    }
+
+    .rightSideImageArea {
+        position: absolute;
+        right: 0;
+        top: 15%;
+    }
+}
+
+@media only screen and (max-width: 1669px) and (min-width: 1400px) {
+    .leftSideImageArea .sideImage {
+        height: 520px;
+    }
+
+    .rightSideImageArea .sideImage {
+        height: 520px;
+    }
+
+    .leftSideImageArea {
+        position: absolute;
+        left: 0;
+        top: 15%;
+    }
+
+    .rightSideImageArea {
+        position: absolute;
+        right: 0;
+        top: 15%;
+    }
+
+    .coachArea {
+        padding: 100px 120px;
+    }
+}
+
+@media only screen and (max-width: 1399px) and (min-width: 1200px) {
+    .leftSideImageArea .sideImage {
+        height: 520px;
+    }
+
+    .rightSideImageArea .sideImage {
+        height: 520px;
+    }
+
+    .leftSideImageArea {
+        position: absolute;
+        left: 0;
+        top: 15%;
+    }
+
+    .rightSideImageArea {
+        position: absolute;
+        right: 0;
+        top: 15%;
+    }
+
+    .coachArea {
+        padding: 100px 120px;
+    }
+
+    .menuArea .menuList .menuLink {
+        font-size: 18px;
+    }
+
+    .menuArea .menuList {
+        padding: 0px 18px;
+    }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+    .menuArea .menuList .menuLink {
+        font-size: 16px;
+    }
+
+    .menuArea .menuList {
+        padding: 0px 13px;
+    }
+
+    .flexItem .navText {
+        font-size: 16px;
+    }
+
+    .menuArea .menuList .callButton {
+        padding: 9px 13px;
+    }
+
+    .serviceStepArea {
+        flex-wrap: wrap;
+    }
+
+    .serviceStepLeft {
+        flex-basis: 100%;
+    }
+
+    .serviceStepRight {
+        flex-basis: 100%;
+    }
+
+    .serviceStepItem {
+        align-items: unset;
+        margin-bottom: 55px;
+    }
+
+    .contactBox .contactBoxHeadingText {
+        font-size: 40px;
+        padding: 0px 0px 6px;
+    }
+
+    .sabarLogoArea {
+        padding: 210px 0px 30px;
+    }
+
+    .sabarDetailsLeft {
+        padding-left: 1%;
+    }
+
+    .sabarHeadingArea {
+        padding-right: 0px;
+    }
+
+    .sabarTextDetailsArea .sabarTextDetails {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
+        color: #9FB5C6;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .sabarDetailsRight img {
+        width: 100%;
+    }
+
+    .heroHeading .heroHeadingText {
+        font-size: 70px;
+    }
+
+    .amubulantTextArea .ambulantHeadingText {
+        font-size: 29px;
+    }
+
+    .amubulantTextArea .aambulanttDetailsText {
+        font-size: 20px;
+        line-height: 36px;
+        padding: 26px 0px 18px;
+    }
+
+    .amubulantTextArea .ambulantUl .ambulantList {
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    .customBg {
+        padding-top: 150px;
+        background-size: cover;
+    }
+
+    .leftSideImageArea .sideImage {
+        height: 400px;
+    }
+
+    .rightSideImageArea .sideImage {
+        height: 400px;
+    }
+
+    .leftSideImageArea {
+        position: absolute;
+        left: 0;
+        top: 15%;
+    }
+
+    .rightSideImageArea {
+        position: absolute;
+        right: 0;
+        top: 15%;
+    }
+
+    .coachArea {
+        padding: 100px 120px;
+    }
+}
+
+@media all and (max-width:991px) {
+    .serviceStepArea {
+        flex-wrap: wrap;
+    }
+
+    .serviceStepLeft {
+        flex-basis: 100%;
+    }
+
+    .serviceStepRight {
+        flex-basis: 100%;
+    }
+
+    .serviceStepItem {
+        align-items: unset;
+        margin-bottom: 55px;
+    }
+
+    .mainHeroArea {
+        padding: 75px 0px;
+    }
+
+    .heading .headingText {
+        font-size: 60px;
+    }
+
+    .serviceItem .serviceName {
+        font-size: 20px;
+        margin-bottom: 40px;
+        height: 36px;
+    }
+
+    .contactBox {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+
+    .contactBoxArea {
+        flex-wrap: wrap;
+    }
+
+    .customMariginLeft {
+        margin-left: 0;
+    }
+
+    .mainSabarLogoArea {
+        background: url(../images/All-Background/bg-02.png)no-repeat scroll 0 0 / 100% 100%;
+    }
+
+    .sabarLogoArea {
+        text-align-last: center;
+        padding: 175px 0px 60px;
+    }
+
+    .mainFooterItem {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .mainFooterItem .socilaMedia {
+        justify-content: center;
+    }
+
+    .sabarLogoArea .sabarLogoImage {
+        width: 60%;
+    }
+
+    .heroRightArea {
+        margin-top: 70px;
+    }
+
+    .sabarDetailsRight img {
+        display: none;
+    }
+
+    .sabarDetailsLeft {
+        padding-left: 3%;
+    }
+
+    .detailsItem {
+        flex-basis: 100%;
+        height: 490px;
+    }
+
+    .pcPic {
+        display: none;
+    }
+
+    .mobilePic {
+        display: block;
+    }
+
+    .heroHeading .heroHeadingText {
+        font-size: 56px;
+        font-weight: 700;
+    }
+
+    .ambulantItemLeft {
+        flex-basis: 100%;
+    }
+
+    .ambulantItemRight {
+        flex-basis: 100%;
+        margin-top: 40px;
+    }
+
+    .customBg {
+        background: url(../images/Ambulant-page/bg-03.png) no-repeat scroll 0 0 / 100% 100%;
+        padding-top: 50px;
+        background-size: cover;
+    }
+
+    .forMobile {
+        display: block;
+    }
+
+    .forPc {
+        display: none;
+    }
+
+    .mainAmbulantSection {
+        padding: 50px 0px 50px;
+    }
+
+    .amubulantTextArea .ambulantHeadingText {
+        font-size: 33px;
+        line-height: 47px;
+    }
+
+    .amubulantTextArea .aambulanttDetailsText {
+        font-size: 21px;
+        line-height: 39px;
+        padding: 31px 0px 29px;
+    }
+
+    .amubulantTextArea .ambulantUl .ambulantList {
+        font-size: 21px;
+        line-height: 39px;
+    }
+
+    .ambulantImageArea {
+        margin-top: 40px;
+        padding-left: 0;
+    }
+
+    .amubulantTextArea .ambulantListHeading {
+        font-size: 22px;
+    }
+
+    .leftSideImageArea {
+        display: none;
+    }
+
+    .rightSideImageArea {
+        display: none;
+    }
+
+    .effectImageArea {
+        position: absolute;
+        bottom: -32px;
+        right: 10px;
+    }
+
+    .kyeEffectImageArea {
+        position: absolute;
+        bottom: -55px;
+        right: 10px;
+    }
+}
+
+@media all and (max-width:767px) {
+    .heroLeftArea .heroButton {
+        padding: 13px 41px;
+    }
+
+    .sabarNoteImageArea .sabarIcon {
+        width: 120px;
+    }
+
+    .sabarNoteImageArea .arabicIcon {
+        width: 80px;
+    }
+
+    .sabarzorgButtonArea .sabarzorgButton {
+        padding: 10px 15px;
+        width: 100%;
+    }
+
+    .serviceArea {
+        margin-bottom: 70px;
+        flex-wrap: wrap;
+    }
+
+    .serviceItem {
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .mainImageArea .serviceStepImage {
+        display: none;
+    }
+
+    .mainTextArea {
+        text-align: center;
+        padding: 40px 30px;
+        border-radius: 7px 7px 7px 7px;
+        -webkit-border-radius: 7px 7px 7px 7px;
+        -moz-border-radius: 7px 7px 7px 7px;
+        -ms-border-radius: 7px 7px 7px 7px;
+        -o-border-radius: 7px 7px 7px 7px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    }
+
+    .MainContactBoxSection {
+        padding: 80px 0px 100px;
+    }
+
+    .contactBox .contactBoxHeadingText {
+        font-size: 40px;
+        padding: 10px 0px 10px;
+    }
+
+    .heroHeading {
+        text-align: center;
+        padding: 120px 0px 90px;
+    }
+
+    .heroHeading .heroHeadingText {
+        font-size: 50px;
+    }
+
+    .sabarHeadingArea .sabarText {
+        font-size: 45px;
+    }
+
+    .sabarHeadingArea img {
+        width: 70px;
+    }
+
+    .sabarTextDetailsArea .sabarTextDetails {
+        font-size: 21px;
+        line-height: 34px;
+    }
+
+    .amubulantTextArea .ambulantHeadingText {
+        font-size: 29px;
+        line-height: 47px;
+    }
+
+    .amubulantTextArea .aambulanttDetailsText {
+        font-size: 19px;
+        line-height: 39px;
+        padding: 31px 0px 29px;
+    }
+
+    .amubulantTextArea .ambulantUl .ambulantList {
+        font-size: 19px;
+        line-height: 39px;
+    }
+
+    .amubulantTextArea .ambulantListHeading {
+        font-size: 21px;
+    }
+
+    .ambulantButtonArea .ambulantButton {
+        font-size: 18px;
+        padding: 15px 33px;
+    }
+
+    .coachButtonArea {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+        padding-right: 0%;
+    }
+
+    .coachButtonArea .coachLogo {
+        height: 170px;
+        width: 170px;
+    }
+
+    .sponsorItem {
+        padding: 70px 20px;
+    }
+
+    .connectWhatsaap {
+        position: absolute;
+        top: -20px;
+        right: 50px;
+    }
+
+    .connectWhatsaap a img {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+@media all and (max-width:577px) {
+    .heroLeftArea .heroText {
+        font-size: 18px;
+        line-height: 31px;
+        margin-bottom: 26px;
+    }
+
+    .heroLeftArea .heroButton {
+        font-size: 18px;
+    }
+
+    .sabarzorgButtonArea .sabarzorgButton {
+        font-size: 18px;
+    }
+
+    .heading .headingText {
+        font-size: 40px;
+    }
+
+    .heading {
+        padding: 30px 0px 20px;
+    }
+
+    .serviceItem .moreButton {
+        font-size: 18px;
+    }
+
+    .mainTextArea .stepName {
+        font-size: 21px;
+        padding: 20px 0px 23px;
+    }
+
+    .mainTextArea .serviceDetailsText {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .contactBox .contactText {
+        font-size: 21px;
+        line-height: 0px;
+    }
+
+    .contactBox .contactBoxHeadingText {
+        font-size: 30px;
+        padding: 10px 0px 10px;
+    }
+
+    .contactBox .contactLinkText {
+        font-size: 18px;
+        padding: 15px 63px;
+    }
+
+    .sabarLogoArea {
+        text-align-last: center;
+        padding: 119px 0px 60px;
+    }
+
+    .mainFooterItem .footerItemHeadingText {
+        font-size: 21px;
+        padding-bottom: 10px;
+    }
+
+    .sabarTextDetailsArea .sabarTextDetails {
+        font-size: 18px;
+        line-height: 34px;
+    }
+
+    .detailsItem .officeDetailsText {
+        font-size: 16px;
+        line-height: 28px;
+        padding: 20px 0px 30px;
+        height: auto;
+    }
+
+    .boxPadding {
+        padding: 31px 10px 10px 25px;
+    }
+
+    .amubulantTextArea .ambulantHeadingText {
+        font-size: 27px;
+        line-height: 47px;
+    }
+
+    .amubulantTextArea .aambulanttDetailsText {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .amubulantTextArea .ambulantUl .ambulantList {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+@media all and (max-width:480px) {
+    .heroLeftArea .heroText {
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 26px;
+    }
+
+    .heroLeftArea .heroButton {
+        font-size: 16px;
+    }
+
+    .sabarzorgButtonArea .sabarzorgButton {
+        font-size: 16px;
+    }
+
+    .heading .headingText {
+        font-size: 35px;
+    }
+
+    .heading {
+        padding: 30px 0px 20px;
+    }
+
+    .serviceItem .moreButton {
+        font-size: 16px;
+    }
+
+    .mainTextArea .stepName {
+        font-size: 18px;
+        padding: 20px 0px 23px;
+    }
+
+    .mainTextArea .serviceDetailsText {
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    .contactBox .contactText {
+        font-size: 18px;
+        line-height: 0px;
+    }
+
+    .contactBox .contactBoxHeadingText {
+        font-size: 27px;
+        padding: 10px 0px 10px;
+    }
+
+    .contactBox .contactLinkText {
+        font-size: 16px;
+        padding: 15px 63px;
+    }
+
+    .sabarLogoArea {
+        text-align-last: center;
+        padding: 119px 0px 60px;
+    }
+
+    .mainFooterItem .footerItemHeadingText {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+
+    .contactBoxlogo .contactBoxLogoImage {
+        width: 100%;
+    }
+
+    .sabarTextDetailsArea .sabarTextDetails {
+        font-size: 16px;
+        line-height: 34px;
+    }
+
+    .officeItemArea {
+        border-top: 20px solid #88B8F2;
+        border-left: 20px solid #88B8F2;
+        border-bottom: 20px solid #FF7E7E;
+        border-right: 20px solid #FF7E7E;
+        padding: 0;
+        margin: 0;
+    }
+
+    .detailsItem .officeDetailsText {
+        font-size: 16px;
+        line-height: 28px;
+        padding: 20px 0px 30px;
+        height: 320px;
+    }
+
+    .detailsItem .itemHeadingText {
+        font-size: 39px;
+    }
+
+    .amubulantTextArea .aambulanttDetailsText {
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    .amubulantTextArea .ambulantUl .ambulantList {
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    .heroHeading .heroHeadingText {
+        font-size: 45px;
+    }
+
+    .amubulantTextArea .ambulantHeadingText {
+        font-size: 22px;
+        line-height: 47px;
+    }
+
+    .coachButtonArea .coachButton {
+        padding: 16px 28px;
+    }
+
+    .coachButtonArea .coachLogo {
+        height: 120px;
+        width: 120px;
+    }
+
+    .effectImageArea img {
+        height: 110px;
+        width: 110px;
+    }
+}
+
+@media all and (max-width:400px) {
+    .detailsItem {
+        flex-basis: 100%;
+        height: 530px;
+    }
+
+    .detailsItem .officeDetailsText {
+        font-size: 16px;
+        line-height: 28px;
+        padding: 20px 0px 30px;
+        height: 367px;
+    }
+
+    .amubulantTextArea .ambulantListHeading {
+        font-size: 19px;
+    }
+
+    .heroHeading .heroHeadingText {
+        font-size: 41px;
+    }
+
+    .coachButtonArea .coachButton {
+        font-size: 19px;
+        padding: 16px 28px;
+    }
+
+    .coachButtonArea .coachLogo {
+        height: 90px;
+        width: 90px;
+    }
+}
+
+@media all and (max-width:371px) {
+    .amubulantTextArea .ambulantHeadingText {
+        font-size: 21px;
+        line-height: 47px;
+    }
+}
+
+@media all and (max-width:359px) {
+    .copyRighArea .copyRightText {
+        font-size: 15px;
+    }
+
+    .amubulantTextArea .ambulantHeadingText {
+        font-size: 21px;
+        line-height: 29px;
+    }
+
+    .heroHeading .heroHeadingText {
+        font-size: 35px;
+    }
+}

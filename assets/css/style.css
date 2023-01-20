@@ -1,0 +1,1851 @@
+/*============
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Work Sans', sans-serif;
+=============*/
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-fluid {
+    max-width: 1800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*=========================================*/
+/*==========Start Header Section==========*/
+/*=========================================*/
+.headerSection {
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 0px 0px 25px 25px;
+    padding: 20px 5%;
+    background: #ffffff;
+}
+
+.logoArea {}
+
+.logoArea .logoLink {
+    display: inline-block;
+}
+
+.logoArea .logoLink .logoImage {
+    height: auto;
+    width: 100%;
+}
+
+.headerBanar {}
+
+.headerBanar .banarImage {
+    width: 100%;
+    height: auto;
+}
+
+.maniMenuArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 999999 !important;
+}
+
+.menuArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuArea .menuList {
+    padding: 0px 32px;
+}
+
+.menuArea .menuList .menuLink {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    position: relative;
+}
+
+.menuArea .menuList .menuLink::after {
+    content: "";
+    clear: both;
+    position: absolute;
+    height: 3px;
+    width: 23px;
+    background-color: #D50F21;
+    bottom: 0px;
+    left: 35%;
+    display: none;
+}
+
+.menuArea .menuList .menuLink:hover {
+    color: #D50F21;
+    /*    font-weight: 800;*/
+}
+
+.menuArea .menuList .menuLink:hover::after {
+    display: block;
+}
+
+.maniMenuArea .logoLink {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.maniMenuArea .logoLink .responsiveLogo {
+    height: 47px;
+    width: 165px;
+}
+
+.flexItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.flexItem .navDownArrow {
+    cursor: pointer;
+}
+
+.flexItem .navText {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 10px;
+    color: #000000;
+    position: relative;
+}
+
+.flexItem .blackArrow {}
+
+.flexItem .redArrow {
+    display: none;
+}
+
+.flexItem .navText::after {
+    content: "";
+    clear: both;
+    position: absolute;
+    height: 3px;
+    width: 23px;
+    background-color: #D50F21;
+    bottom: 0px;
+    left: 35%;
+    display: none;
+}
+
+.flexItem .navText:hover {
+    color: #D50F21;
+}
+
+.flexItem:hover .blackArrow {
+    display: none;
+}
+
+.flexItem:hover .redArrow {
+    display: inline-block;
+}
+
+.flexItem .navText:hover::after {
+    display: block;
+}
+
+.navActive {
+    color: #D50F21 !important;
+    position: relative;
+}
+
+.navActive::after {
+    content: "";
+    clear: both;
+    position: absolute;
+    height: 3px;
+    width: 23px;
+    background-color: #D50F21;
+    bottom: 0px;
+    left: 35%;
+    display: block !important;
+}
+
+.menuArea .menuList .callButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #D50F21;
+    padding: 15px 20px;
+    border-radius: 15px;
+}
+
+.menuArea .menuList .callButton .navText {
+    color: #ffffff;
+}
+
+.dorpDownMenu {
+    position: absolute;
+    top: 35px;
+    display: none;
+    background: #ffffff;
+    padding-bottom: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.dorpDownMenu .menuList {}
+
+.dorpDownMenu .menuList .menuLink {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 10px;
+    color: #000000;
+}
+
+.maniMenuArea .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.maniMenuArea .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 35px 20px;
+    position: relative;
+    user-select: none;
+    z-index: 999999;
+}
+
+.maniMenuArea .menu-icon .navicon {
+    background: #000000;
+    display: block;
+    height: 3px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 25px;
+}
+
+.maniMenuArea .menu-icon .navicon:before,
+.maniMenuArea .menu-icon .navicon:after {
+    background: #000000;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 32px;
+}
+
+.maniMenuArea .menu-icon .navicon:before {
+    top: 10px;
+}
+
+.maniMenuArea .menu-icon .navicon:after {
+    top: -10px;
+}
+
+/* menu btn */
+.maniMenuArea .menu-btn {
+    display: none;
+}
+
+.maniMenuArea .menu-btn:checked ~ .menu {
+    max-height: 270px;
+}
+
+.maniMenuArea .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+    position: fixed;
+    right: 20px;
+}
+
+.maniMenuArea .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.maniMenuArea .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.maniMenuArea .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.maniMenuArea .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+@media (min-width: 992px) {
+    .maniMenuArea .menu-icon {
+        display: none;
+    }
+}
+
+@media all and (max-width:991px) {
+    .menuArea {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .menuArea {
+        display: none;
+    }
+
+    /* .maniMenuArea .menu-btn:checked ~ .menuArea {
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+    } */
+    .maniMenuArea .menu-btn:checked ~ .menuArea {
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+        position: fixed;
+        background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+    }
+
+    .menuArea .menuList {
+        margin: 8px 0px;
+    }
+
+    .maniMenuArea {
+        display: unset;
+        justify-content: unset;
+        align-items: unset;
+        padding: 15px 38px;
+        position: relative;
+        z-index: 999999 !important;
+    }
+
+    .menuArea .menuList .menuLink {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .headerButtonArea .headerButtonLink {
+        font-size: 18px;
+    }
+}
+
+/* ------------------------------------------------------------ */
+/* --------------------Hero Area Start------------------------- */
+/* ------------------------------------------------------------ */
+.mainHeroArea {
+    padding: 150px 0px;
+}
+
+.heroLeftArea {}
+
+.sabarNoteImageArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.heroLeftArea .heroTextArea {}
+
+.heroLeftArea .heroText {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 41px;
+    color: #9FB5C6;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 55px;
+    text-align: justify;
+}
+
+.heroLeftArea .heroButton {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 41px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    background-color: #D50F21;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    padding: 25px 65px;
+    border: 1px solid transparent;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.heroLeftArea .heroButton:hover {
+    color: #D50F21;
+    background-color: #ffffff;
+    border: 1px solid #D50F21;
+}
+
+.heroRightArea {
+    text-align: center;
+    padding-left: 10%;
+}
+
+.sabarzorgImageArea {}
+
+.sabarzorgImageArea .sabarzorg {
+    width: 100%;
+}
+
+.sabarzorgButtonArea {}
+
+.sabarzorgButtonArea .sabarzorgButton {
+    font-size: 21px;
+    font-weight: 800;
+    line-height: 31px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    background-color: #D50F21;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    width: 70%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sabarzorgButtonArea .blueColor {
+    background-color: #1473E6;
+}
+
+.heroLeftArea {
+    position: relative;
+}
+
+.effectImageArea {
+    position: absolute;
+    bottom: -32px;
+    right: -100px;
+}
+
+.heroRightArea {
+    position: relative;
+}
+
+.kyeEffectImageArea {
+    position: absolute;
+    bottom: -32px;
+    right: -100px;
+}
+
+/* ------------------------------------------------------------ */
+/* --------------------Hero Area End------------------------- */
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+/* --------------------Sponsor Area Start--------------------- */
+/* ------------------------------------------------------------ */
+.mainSponsorArea {
+    background: url(../images/sabar/slider-bg.png)no-repeat scroll 0 0 / 100% 100%;
+}
+
+.sponsorItem {
+    padding: 110px 20px;
+    position: relative;
+}
+
+.swiper-slide img {
+    width: 90%;
+}
+
+.connectWhatsaap {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+}
+
+.connectWhatsaap a img {
+    height: 100px;
+    width: 100px;
+}
+
+/* ------------------------------------------------------------ */
+/* --------------------Sponsor Area End------------------------- */
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+/* --------------------Service Area Start---------------------- */
+/* ------------------------------------------------------------ */
+.mainServiceArea {}
+
+.heading {
+    padding: 30px 0px 85px;
+}
+
+.heading .headingText {
+    font-size: 84px;
+    font-weight: 600;
+    line-height: 31px;
+    color: #1473E6;
+    font-family: 'Poppins', sans-serif;
+}
+
+.serviceArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 140px;
+}
+
+.serviceItem {
+    flex-basis: 31%;
+    text-align: center;
+}
+
+.serviceItem .serviceImage {
+    width: 100%;
+}
+
+.serviceItem .serviceName {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #262626;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 40px;
+}
+
+.serviceItem .moreButton {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 31px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    background: #1473E6;
+    border: 1px solid transparent;
+    padding: 20px 45px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.serviceItem .moreButton:hover {
+    color: #D50F21;
+    background: #ffffff;
+    /* border: 1px solid #1473E6; */
+}
+
+.serviceStepArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.serviceStepLeft {
+    flex-basis: 48%;
+}
+
+.serviceStepRight {
+    flex-basis: 48%;
+}
+
+.serviceStepItem {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 55px;
+}
+
+.mainImageArea {}
+
+.mainImageArea .serviceStepImage {
+    border-radius: 7px 0px 0px 7px;
+    -webkit-border-radius: 7px 0px 0px 7px;
+    -moz-border-radius: 7px 0px 0px 7px;
+    -ms-border-radius: 7px 0px 0px 7px;
+    -o-border-radius: 7px 0px 0px 7px;
+}
+
+.mainTextArea {
+    text-align: center;
+    padding: 40px 30px;
+    border-radius: 0px 7px 7px 0px;
+    -webkit-border-radius: 0px 7px 7px 0px;
+    -moz-border-radius: 0px 7px 7px 0px;
+    -ms-border-radius: 0px 7px 7px 0px;
+    -o-border-radius: 0px 7px 7px 0px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+.mainTextArea .serviceStepIcon {}
+
+.mainTextArea .stepName {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #2A2833;
+    font-family: 'Poppins', sans-serif;
+    padding: 40px 0px 23px;
+}
+
+.mainTextArea .serviceDetailsText {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 29px;
+    color: #9FB5C6;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ------------------------------------------------------------ */
+/* --------------------Service Area End------------------------- */
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+/* --------------------ContactBox Area End--------------------- */
+/* ------------------------------------------------------------ */
+.MainContactBoxSection {
+    padding: 145px 0px 300px;
+}
+
+.contactBoxlogo {
+    text-align: center;
+}
+
+.contactBoxlogo .contactBoxLogoImage {}
+
+.contactBoxArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactBox {
+    flex-basis: 50%;
+    text-align: center;
+    background-color: #D50F21;
+    border-radius: 31px;
+    -webkit-border-radius: 31px;
+    -moz-border-radius: 31px;
+    -ms-border-radius: 31px;
+    -o-border-radius: 31px;
+    padding: 25px 0px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.customMariginLeft {
+    margin-left: -4%;
+}
+
+.contactBox .contactText {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 33px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contactBox .contactBoxHeadingText {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 67px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 0px 25px;
+}
+
+.contactBox .contactLinkText {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 31px;
+    color: #D50F21;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    padding: 23px 75px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+/* ------------------------------------------------------------ */
+/* --------------------ContactBox Area End-------------------- */
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+/* --------------------SabarLogo Area End-------------------- */
+/* ------------------------------------------------------------ */
+.mainSabarLogoArea {
+    background: url(../images/All-Background/bg-01.png)no-repeat scroll 0 0 / 100% 100%;
+}
+
+.sabarLogoArea {
+    text-align-last: center;
+    padding: 300px 0px 100px;
+}
+
+.sabarLogoArea .sabarLogoImage {}
+
+/* ------------------------------------------------------------ */
+/* --------------------SabarLogo Area End-------------------- */
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+/* -----------------------Footer Area Start-------------------- */
+/* ------------------------------------------------------------ */
+.mainFooterArea {
+    background-color: #EDF6FB;
+    padding-top: 60px;
+}
+
+.mainFooterItem {}
+
+.mainFooterItem .footerLogo {}
+
+.mainFooterItem .footerLogo .footerLogoImage {}
+
+.mainFooterItem .footerTextArea {
+    padding: 25px 0px;
+}
+
+.mainFooterItem .footerTextArea .footerText {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #9098B1;
+    font-family: 'Poppins', sans-serif;
+}
+
+.mainFooterItem .socilaMedia {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mainFooterItem .socilaMedia .socilaMediaLink {
+    margin-right: 20px;
+}
+
+.mainFooterItem .socilaMedia .socilaMediaLink .socilaMediaIcon {
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.mainFooterItem {}
+
+.mainFooterItem .footerItemHeadingText {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #2E323B;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 55px;
+}
+
+.mainFooterItem .footeItemUl {}
+
+.mainFooterItem .footeItemUl .footerItemList {}
+
+.mainFooterItem .footeItemUl .footerItemList .footerItemLink {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #9098B1;
+    font-family: 'Poppins', sans-serif;
+}
+
+.copyRighArea {
+    text-align: center;
+    border-top: 2px solid #DEDEFF;
+    margin-top: 40px;
+    padding: 33px 0px 15px;
+}
+
+.copyRighArea .copyRightText {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #9098B1;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ------------------------------------------------------------ */
+/* ------------------------Footer Area End--------------------- */
+/* ------------------------------------------------------------ */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>OVER-ONS PAGE START<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.overOnsBg {
+    background: url(../images/over-ons-page/bg-01.png) no-repeat scroll 0 0 / 100% 100%;
+}
+
+.sabarDetailsSection {}
+
+.sabarDetailsLeft {
+    padding-left: 10%;
+}
+
+.sabarHeadingArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-right: 80px;
+}
+
+.sabarHeadingArea .sabarText {
+    font-size: 73px;
+    font-weight: 900;
+    line-height: 84px;
+    color: #1473E6;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+}
+
+.sabarTextDetailsArea {}
+
+.sabarTextDetailsArea .sabarTextDetails {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 41px;
+    color: #9FB5C6;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sabarDetailsRight {
+    text-align: right;
+}
+
+.sabarDetailsRight img {}
+
+.sabarOfficeSection {
+    padding: 100px 0px;
+}
+
+.officeItemArea {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-top: 40px solid #88B8F2;
+    border-left: 40px solid #88B8F2;
+    border-bottom: 40px solid #FF7E7E;
+    border-right: 40px solid #FF7E7E;
+    padding: 0;
+    margin: 0;
+}
+
+.detailsItem {
+    flex-basis: 50%;
+    height: 490px;
+}
+
+.boxPadding {
+    padding: 65px 10px 10px 50px;
+}
+
+.detailsItem .itemHeadingText {
+    font-size: 51px;
+    font-weight: 900;
+    line-height: 59px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.detailsItem .officeDetailsText {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 0px 60px;
+    height: 280px;
+}
+
+.detailsItem .neemContacArea {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.detailsItem .neemContacArea .neemContactbtn {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    color: #1473E6;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    padding: 21px 32px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.detailsItem .image {
+    height: 100%;
+    width: 100%;
+}
+
+.playButtonPosition {
+    position: relative;
+}
+
+.playButtonPosition .playButton {
+    position: absolute;
+    top: 41%;
+    left: 42%;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.pcPic {}
+
+.mobilePic {
+    display: none;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>OVER-ONS PAGE END<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>AMBULANT PAGE START<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.ambulanteBg {
+    background: url(../images/Ambulant-page/bg-01.png) no-repeat scroll 0 0 / 100% 100%;
+}
+
+.mainAmbulantSection {
+    padding: 100px 0px 60px;
+}
+
+.ambulantItemArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ambulantItemLeft {
+    flex-basis: 62%;
+}
+
+.ambulantItemRight {
+    flex-basis: 38%;
+}
+
+.amubulantTextArea {}
+
+.amubulantTextArea .ambulantHeadingText {
+    font-size: 41px;
+    font-weight: 900;
+    line-height: 47px;
+    color: #1473E6;
+    font-family: 'Poppins', sans-serif;
+}
+
+.amubulantTextArea .aambulanttDetailsText {
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 41px;
+    color: #9FB5C6;
+    font-family: 'Poppins', sans-serif;
+    padding: 70px 0px 45px;
+}
+
+.amubulantTextArea .ambulantListHeading {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 41px;
+    color: #1473E6;
+    font-family: 'Poppins', sans-serif;
+}
+
+.amubulantTextArea .ambulantListHeading .ambulantUl {}
+
+.amubulantTextArea .ambulantUl .ambulantList {
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 41px;
+    color: #9FB5C6;
+    font-family: 'Poppins', sans-serif;
+}
+
+.amubulantTextArea .ambulantButton {}
+
+.ambulantButtonArea {
+    text-align: right;
+    margin-top: 30px;
+}
+
+.ambulantButtonArea .ambulantButton {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 31px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    background: #1473E6;
+    border: 1px solid transparent;
+    padding: 20px 45px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    text-align: right;
+}
+
+.ambulantButtonArea .ambulantButton:hover {
+    color: #D50F21;
+    background: #ffffff;
+}
+
+.redBgOne .ambulantButton {
+    background: #D50F21;
+}
+
+.redBgOne .ambulantButton:hover {
+    background: #ffffff;
+}
+
+.grayBg .ambulantButton {
+    background: #45618D;
+}
+
+.grayBg .ambulantButton:hover {
+    background: #ffffff;
+}
+
+.ambulantImageArea {
+    text-align: center;
+    padding-left: 70px;
+}
+
+.ambulantImageArea .ambulantImage {
+    height: auto;
+    width: 100%;
+}
+
+.customBg {
+    background: url(../images/Ambulant-page/bg-02.png) no-repeat scroll 0 0 / 100% 100%;
+    padding-top: 200px;
+}
+
+.paddingRight-one {
+    padding-right: 70px;
+    padding-left: 0px;
+}
+
+.forMobile {
+    display: none;
+}
+
+.forPc {}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>OAMBULANT PAGE END<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>COACH PAGE END<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.coachButtonArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding-right: 10%;
+}
+
+.coachButtonArea .coachButton {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 31px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    background: #D50F21;
+    border: 1px solid transparent;
+    padding: 20px 45px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    text-align: right;
+}
+
+.coachButtonArea .coachButton:hover {
+    color: #D50F21;
+    background: #ffffff;
+}
+
+.mainCoachSection {
+    padding: 100px 0px;
+}
+
+.coachButtonArea .coachLogo {
+    height: 238px;
+    width: 238px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.imagePosition {
+    position: relative;
+}
+
+.leftSideImageArea {
+    position: absolute;
+    left: 0;
+    top: 5%;
+}
+
+.leftSideImageArea .sideImage {}
+
+.rightSideImageArea {
+    position: absolute;
+    right: 0;
+    top: 5%;
+}
+
+.leftSideImageArea .sideImage {}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>COACH PAGE END<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Aanmelding Page<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.mainHeroSection {
+    margin-top: -50px;
+    z-index: -1;
+    position: relative;
+}
+
+.aanmeldingBg {
+    background: url(../images/Aanmelding-Page/Aanmelding-BG.png) no-repeat scroll 0 0 / 100% 100%;
+}
+
+.heroHeading {
+    text-align: center;
+    padding: 170px 0px 150px;
+}
+
+.heroHeading .heroHeadingText {
+    font-size: 86px;
+    font-weight: 400;
+    line-height: 94px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.gegevensFormArea {
+    padding: 145px 0px 130px;
+}
+
+.gegevensLeftArea {}
+
+.gegevensLeftArea .sideBanar {
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.gegevensRightArea {
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    height: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 35px 50px;
+    margin-left: -28px;
+}
+
+.formHeaderArea {}
+
+.formConter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formConter .countNumber {
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 24px;
+    display: inline-block;
+    background-color: #1473E6;
+    height: 53px;
+    width: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 20px;
+}
+
+.formConter .countText {
+    font-size: 23px;
+    font-weight: 500;
+    color: #1473E6;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 24px;
+    display: inline-block;
+    letter-spacing: 3px;
+}
+
+.clientSelectArea {}
+
+.clientSelectItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px 0px;
+}
+
+.clientSelectItem .clientSlectButton {
+    border: none;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 35px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px gray;
+    width: 133px;
+    margin: 0px 25px;
+}
+
+.clientSelectItem .clientSlectButton .clientIconMain {}
+
+.clientSelectItem .clientSlectButton .clientIconHover {
+    display: none;
+}
+
+.clientSelectItem .clientSlectButton .clientText {
+    font-size: 16px;
+    font-weight: 500;
+    color: #DB5561;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 39px;
+}
+
+.clientSelectItem .clientSlectButton:hover .clientIconMain {
+    display: none !important;
+}
+
+.clientSelectItem .clientSlectButton:hover .clientIconHover {
+    display: block !important;
+}
+
+.clientSelectItem .clientSlectButton:hover {
+    background-image: linear-gradient(to bottom right, #A8B1EC, #97AAEB, #8BA4EB, #7C9EEA, #729AEA, #578FE8, #4D8BE8, #3F85E7, #3481E8, #247AE6, #1875E6);
+}
+
+.clientSelectItem .clientSlectButton:hover .clientText {
+    color: #ffffff;
+}
+
+.gegenesLogoArea {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.gegenesLogoArea .gegenesLogo {}
+
+.gegevensHeading {
+    text-align: center;
+}
+
+.gegevensHeading .gegevensHeadingText {
+    font-size: 23px;
+    font-weight: 500;
+    color: #1473E6;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 24px;
+    display: inline-block;
+    letter-spacing: 3px;
+    padding: 35px 0px;
+}
+
+.gegevensFormGropu {
+    margin-bottom: 27px;
+}
+
+.gegevensFormGropu .gegevensSelect {
+    font-size: 23px;
+    font-weight: 500;
+    color: #CDD0D9;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 24px;
+    background: #ffffff;
+    border: 1px solid #1473E6;
+    padding: 23px 25px;
+    width: 100%;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    /* Arrow */
+    appearance: none;
+    background-image: url("../images/Aanmelding-Page/down-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right 1rem top 50%;
+    background-size: 1rem auto;
+    cursor: pointer;
+}
+
+.gegevensFormGropu .gegevensSelect .gegevensOptions {
+    font-size: 23px;
+    font-weight: 500;
+    color: #CDD0D9;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 24px;
+    background: #ffffff;
+    border: 1px solid #1473E6;
+    padding: 23px 25px;
+    width: 100%;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.gegevensFormGropu .gegevensInput {
+    font-size: 23px;
+    font-weight: 500;
+    color: #CDD0D9;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 24px;
+    background: #ffffff;
+    border: 1px solid #1473E6;
+    padding: 23px 25px;
+    width: 100%;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.flexBox-One {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customWidth {
+    flex-basis: 48%;
+}
+
+.radioBoxArea {
+    background: #ffffff;
+    border: 1px solid #1473E6;
+    padding: 23px 25px;
+    width: 100%;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.radioBoxArea .radioBox {
+    height: 29px;
+    width: 29px;
+    color: #1473E6;
+    margin-right: 10px;
+}
+
+.radioBoxArea .radioBoxLabel {
+    font-size: 23px;
+    font-weight: 500;
+    color: #CDD0D9;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 24px;
+}
+
+.flexBox-radio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexBox-radio .customWidthRadion {
+    flex-basis: 48%;
+}
+
+.iconPosition {
+    position: relative;
+}
+
+.showIcon {
+    position: absolute;
+    right: 10px;
+    top: 30%;
+}
+
+.paginationArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 33px 0px 25px;
+}
+
+.paginationArea .paginationItem {
+    font-size: 24px;
+    font-weight: 500;
+    color: #1473E6;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 24px;
+    display: inline-block;
+    background-color: #ffffff;
+    height: 53px;
+    width: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid #1473E6;
+    cursor: pointer;
+}
+
+.paginationArea .hrLine {
+    height: 2px;
+    background-color: #1473E6;
+    width: 49px;
+}
+
+.paginationArea .paginationItem:hover {
+    color: #ffffff;
+    background-color: #1473E6;
+}
+
+.paginationActive {
+    color: #ffffff;
+    background-color: #1473E6;
+}
+
+.volgendeButtonArea {
+    text-align: center;
+}
+
+.volgendeButtonArea .volgendeSubmitButton {
+    border: none;
+    background: none;
+    font-size: 23px;
+    font-weight: 500;
+    color: #ffffff;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 24px;
+    background: #1473E6;
+    padding: 23px 50px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.noteArea {
+    margin-top: 27px;
+}
+
+.noteArea .noteText {
+    font-size: 15px;
+    font-weight: 500;
+    color: #CDD0D9;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 24px;
+}
+
+/* ---------------- Multipule Select------------------- */
+.multipuleSelectArea {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.gGGZandAmbulantSelect {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0px 11px;
+}
+
+.gGGZItem {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.gGGZItem .gGGZItemRadiobox {
+    height: 23px;
+    width: 23px;
+    margin-right: 5px;
+}
+
+.gGGZItem .gGGZItemLabel {
+    font-size: 24px;
+    font-weight: 500;
+    color: #1473E6;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 24px;
+}
+
+.genderSelectArea {}
+
+.genderSelectArea .genderHeadingText {
+    font-size: 23px;
+    font-weight: 500;
+    color: #1473E6;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 54px;
+    padding: 18px 0px 15px;
+}
+
+.genderFlexBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+}
+
+.genderRadio {
+    flex-basis: 48%;
+}
+
+.marginRight {
+    margin-right: 20px;
+}
+
+.fileUploadArea {
+    text-align: center;
+    background-color: #E1F8FF;
+    border: 1px solid #1473E6;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 10px;
+}
+
+.fileUploadArea .fileName {
+    font-size: 16px;
+    font-weight: 500;
+    color: #DF4848;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 35px;
+    padding: 35px 0px 20px;
+}
+
+.fileUploadArea .fileUploadButton {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 35px;
+    border: none;
+    background: #1473E6;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+    padding: 15px 50px;
+}
+
+.fileUploadArea .fileSizeNotice {
+    font-size: 16px;
+    font-weight: 500;
+    color: #9F9F9F;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 35px;
+    display: block;
+    text-align: left;
+}
+
+/* ---------------- End Multipule Select------------------- */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Aanmelding Page END<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>CONTACT PAGE<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.mainContactArea {}
+
+.contactheading {}
+
+.contactheading .contactHeadingText {
+    font-size: 41px;
+    font-weight: 500;
+    color: #1473E6;
+    font-family: 'Poppins', sans-serif;
+    line-height: 47px;
+}
+
+.contactheading .contactHeadingDetails {
+    font-size: 26px;
+    font-weight: 500;
+    color: #9FB5C6;
+    font-family: 'Poppins', sans-serif;
+    line-height: 41px;
+    padding: 57px 0px 65px;
+}
+
+.contactDetails {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contactIem {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 25px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    flex-basis: 31%;
+    margin-right: 2%;
+}
+
+.contactIcon {}
+
+.contactIcon .contactIcon {
+    margin-right: 10px;
+}
+
+.contactInfo {}
+
+.contactInfo .contactInfoLink {
+    font-size: 19px;
+    font-weight: 700;
+    color: #4D4D4D;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 26px;
+}
+
+.contactInfo .contactInfoName {
+    font-size: 15px;
+    font-weight: 400;
+    color: #4D4D4D;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 20px;
+}
+
+.contactFormArea {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 55px 0px 180px;
+}
+
+.mainContactForm {
+    flex-basis: 40%;
+}
+
+.mainContactForm .contactFormInput {
+    font-size: 24px;
+    font-weight: 500;
+    color: #CDD0D9;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 24px;
+    background: #ffffff;
+    border: 1px solid #1473E6;
+    padding: 23px 25px;
+    width: 100%;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+.mainContactForm .contactFormTextArea {
+    font-size: 24px;
+    font-weight: 500;
+    color: #CDD0D9;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 24px;
+    background: #ffffff;
+    border: 1px solid #1473E6;
+    padding: 23px 25px;
+    width: 100%;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    margin-bottom: 15px;
+    height: 165px;
+    resize: none;
+}
+
+.mainContactForm .submitBtn {
+    color: #ffffff;
+    background: #D50F21;
+    margin-top: 15px;
+    border: none;
+}
+
+.contactPageLogo {
+    flex-basis: 50%;
+    margin-left: 180px;
+}
+
+.contactPageLogo img {}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>CONTACT PAGE END<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>Klachtenprocedure PAGE Start<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.flexThere {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customWidthRadioFour {
+    flex-basis: 48%;
+}
+
+.labelText {
+    font-size: 26px;
+    font-weight: 500;
+    color: #CDD0D9;
+    font-family: 'Poppins', sans-serif;
+    line-height: 41px;
+}
+
+.textAreaBox {
+    width: 100%;
+    ;
+}
+
+.textAreaBox .contactFormTextArea {
+    font-size: 24px;
+    font-weight: 500;
+    color: #CDD0D9;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 24px;
+    background: #ffffff;
+    border: 1px solid #1473E6;
+    padding: 23px 25px;
+    width: 100%;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    margin-bottom: 15px;
+    height: 165px;
+    resize: none;
+}
+
+.textAreaBox .formSubmitBtn {
+    font-size: 24px;
+    font-weight: 500;
+    color: #CDD0D9;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 24px;
+    color: #ffffff;
+    background: #D50F21;
+    margin-top: 15px;
+    border: none;
+    padding: 23px 25px;
+    width: 40%;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>Klachtenprocedure PAGE END<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
